@@ -1,5 +1,6 @@
 import org.lessons.java.snacks.Studente;
 import org.lessons.java.snacks.ContoBancario;
+import org.lessons.java.snacks.RegistroStudenti;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -25,5 +26,10 @@ public class App {
         System.out.println("Saldo dopo il prelievo di zero: " + conto.getSaldo());
         conto.versa(500);
         System.out.println("Saldo dopo il versamento di 500: " + conto.getSaldo());
+
+        RegistroStudenti registro = new RegistroStudenti();
+        registro.aggiungiStudente(studente);
+        registro.stampaStudenti();
+
     }
 }
