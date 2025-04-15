@@ -1,4 +1,4 @@
-package org.lessons;
+package org.lessons.java.snacks;
 
 public class ContoBancario {
     // attributi
@@ -14,6 +14,10 @@ public class ContoBancario {
     // getter e setter
     public double getSaldo() {
         return this.saldo;
+    }
+
+    public int getNumeroConto() {
+        return this.numeroConto;
     }
 
     // metodi

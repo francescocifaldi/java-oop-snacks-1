@@ -1,12 +1,14 @@
-import org.Studente;
-import org.lessons.ContoBancario;
+import org.lessons.java.snacks.Studente;
+import org.lessons.java.snacks.ContoBancario;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Studente studente = new Studente("Mario", "Rossi", 20);
-        System.out.println(studente.getFullName());
+        System.out.println("Informazioni sullo studente: " + studente.getFullName());
 
         ContoBancario conto = new ContoBancario(12345);
+        System.out.println("Numero di conto: " + conto.getNumeroConto());
+        System.out.println("Saldo iniziale: " + conto.getSaldo());
         conto.versa(1000);
         System.out.println("Saldo dopo il versamento: " + conto.getSaldo());
         conto.preleva(500);

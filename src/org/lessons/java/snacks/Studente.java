@@ -1,4 +1,4 @@
-package org;
+package org.lessons.java.snacks;
 
 public class Studente {
     // attributi
